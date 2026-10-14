@@ -1,1 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for Astrum Browser.">
+  <title>Privacy Policy | Astrum Browser</title>
+  <style>
+    :root { color-scheme: dark; --bg: #10002b; --panel: #1a0038; --text: #f5eaff; --muted: #d2bee6; --accent: #e0aaff; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.7 system-ui, sans-serif; }
+    main { width: min(860px, calc(100% - 32px)); margin: 5vh auto; }
+    article { padding: clamp(22px, 5vw, 48px); background: var(--panel); border: 1px solid #3c096c; border-radius: 20px; }
+    h1, h2 { color: var(--accent); line-height: 1.25; }
+    h1 { font-size: clamp(2rem, 6vw, 3rem); }
+    h2 { margin-top: 2em; font-size: 1.3rem; }
+    p, li { color: var(--muted); }
+    code { color: var(--text); overflow-wrap: anywhere; }
+    a { color: var(--accent); }
+    .updated { color: var(--muted); font-size: .92rem; }
+    nav { display: flex; gap: 18px; flex-wrap: wrap; margin-bottom: 24px; }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <nav aria-label="Document navigation"><a href="index.html">Legal home</a><a href="terms.html">Terms of Service</a></nav>
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated: October 14, 2026</p>
+      <p>This policy explains how the Astrum desktop browser (the “App”) handles information. Astrum is provided as a browser application; websites you visit and third-party services you choose to use are operated independently.</p>
 
+      <h2>Information stored on your device</h2>
+      <p>Astrum stores browser data locally in your operating-system user account. Depending on how you use the App, this can include:</p>
+      <ul>
+        <li><strong>Browsing history:</strong> visited page titles, URLs, and visit times.</li>
+        <li><strong>Favorites:</strong> the names and URLs you choose, plus available site icons.</li>
+        <li><strong>Browser profile data:</strong> information managed by Qt WebEngine, which can include cookies, site storage, cache, and other website data.</li>
+        <li><strong>Downloads:</strong> files you choose to download are saved to the location you select.</li>
+        <li><strong>Preferences:</strong> including the selected search engine and your Discord Rich Presence privacy preference.</li>
+      </ul>
+      <p>The App’s settings file is named <code>astrum_data.json</code> in your user home folder. The regular browser profile is stored in <code>.astrum_profile</code> in that folder. Exact locations depend on your operating system and account.</p>
+      <p>Astrum does not provide a browser account or sync service. These local files are not uploaded by Astrum as part of its normal browsing features. Websites you visit will still receive the requests needed to load their pages, and may collect information under their own policies.</p>
+
+      <h2>Discord Rich Presence</h2>
+      <p>Astrum can use Discord Rich Presence to display browser activity through the Discord desktop application. The privacy setting to hide the website and page title is enabled by default. In this mode, Astrum sends generic activity (“Browsing with Astrum”) without the current website or page title.</p>
+      <p>If you turn that setting off, Astrum sends the current website hostname and page title to Discord for display as your activity. It does not send the full URL path through this Rich Presence feature. Discord processes activity information under its own privacy policy and settings. You can change the Astrum setting or disable Rich Presence through Discord’s settings.</p>
+
+      <h2>Incognito tabs</h2>
+      <p>Incognito tabs use a temporary browser profile separate from the regular profile. Astrum does not add pages visited in these tabs to its saved browsing history, and clears Discord activity while an incognito tab is active. The temporary session is discarded when its incognito tabs are closed.</p>
+      <p>Incognito is not anonymity. Websites, internet service providers, employers, schools, and network operators may still observe or record activity. Files you explicitly download remain on your device. Favorites you create or remove while in an incognito tab are saved to Astrum’s regular favorites list; do not use that feature for information you want to keep private.</p>
+
+      <h2>Clearing data</h2>
+      <p>The “Clear Cache &amp; Browsing Data” control clears the regular profile’s HTTP cache and Astrum’s saved browsing history. It does not remove favorites, downloaded files, or necessarily clear cookies and all other site data. You can manage site data using available browser or operating-system controls.</p>
+
+      <h2>Children</h2>
+      <p>Astrum is general-purpose browser software and is not designed to collect children’s information. Parents and guardians should supervise children’s use of the App and the websites accessed through it.</p>
+
+      <h2>Changes and contact</h2>
+      <p>This policy may be updated when the App’s behavior changes. The date above indicates the latest revision. For questions about this policy, contact the Astrum maintainers through the GitHub organization or repository from which you obtained the App.</p>
+      <p>This document describes the App’s intended behavior and is not legal advice.</p>
+    </article>
+  </main>
+</body>
+</html>
